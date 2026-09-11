@@ -1,0 +1,30 @@
+# Java
+target/
+*.class
+
+# Spring Boot
+*.log
+
+# Node
+node_modules/
+dist/
+build/
+
+# Environment
+.env
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test / coverage
+coverage/
+
+# Temporary files
+*.tmp
+*.temp
