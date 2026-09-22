@@ -1,0 +1,16 @@
+services:
+  identity-postgres:
+    image: postgres:16
+    container_name: logitrack-identity-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: identity_db
+      POSTGRES_USER: logitrack
+      POSTGRES_PASSWORD: logitrack_dev
+    ports:
+      - "5432:5432"
+    volumes:
+      - identity-postgres-data:/var/lib/postgresql/data
+
+volumes:
+  identity-postgres-data:
